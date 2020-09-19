@@ -99,3 +99,27 @@ const nums = {
 const { firstValue, secondValue } = nums;
 console.log(firstValue, secondValue);
 ```
+
+### Ternary if statements
+
+This is just a fancy word to make if statements more concise
+
+Old Way:
+
+```javascript
+var myBool = true;
+
+if (mybool) {
+  console.log('Hello');
+} else {
+  console.log('Bye');
+}
+```
+
+New Way:
+
+```javascript
+let myBool = true;
+
+myBool ? console.log('Hello') : console.log('Bye');
+```
