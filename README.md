@@ -45,7 +45,7 @@ Each step in the workshop builds on top of the previous one. If at any point you
 - Setup/Intro
 - JSX syntax and Ant design
 - Styled Components
-- State management with `useState`
-- API calls with `useEffect`
+- API calls with `useEffect` and `useState` for state management
+- Integrating data with components
 - Writing readable, reusable and composable components
 - Conditionally rendering components
