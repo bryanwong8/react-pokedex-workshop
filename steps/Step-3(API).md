@@ -14,7 +14,7 @@ After creating a cool looking card we need to populate it with real time data in
 
 ## 📚 Tasks
 
-Import the `loadPokemon` helper function and the `useEffect` and `useState` functions from React. Afterwards call `loadPokemon()` in `useEffect`. `useEffect` is called whenever the component gets rendered on the page:
+Import the `loadPokemon` from helper function, `useEffect` and `useState` functions from React. Afterwards call `loadPokemon()` in `useEffect`. `useEffect` is called whenever the component gets rendered on the page:
 
 ```javascript
 import React, { useState, useEffect } from 'react'
@@ -72,7 +72,7 @@ const App = () => {
 
 Check the Network panel of your Developer Tools to see that it is making an API call.
 
-In order to render the Pokemon data and images, we need to store the results in state, using `useState`. State is where you can store values that belong to a component. Whenever the state changes, the component will re-render:
+In order to render the Pokemon data and images, we need to save the results in state, using `useState`. State is where you can store values that belong to a component. Whenever the state changes, the component will re-render:
 
 ```javascript
 const App = () => {
@@ -80,16 +80,16 @@ const App = () => {
   const name = 'Bryan Wong';
 
   useEffect(() => {
-    const fetcPokemon = async () => {
+    const fetchPokemon = async () => {
       try {
-          const pokemonResults = await loadPokemon();
-          setPokemon(pokemonResults);
+        const pokemonResults = await loadPokemon();
+        setPokemon(pokemonResults.results);
       } catch (err) {
-          console.error(err);
+        console.error(err);
       }
-    }
-    fetchResults();
-  }, [])
+    };
+    fetchPokemon();
+  }, []);
 
   return (
     <StyledContainer className='site-card-wrapper'>
