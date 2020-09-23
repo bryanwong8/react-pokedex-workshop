@@ -17,7 +17,7 @@ After creating a cool looking card we need to populate it with real time data in
 Import the `loadPokemon` from helper function, `useEffect` and `useState` functions from React. Afterwards call `loadPokemon()` in `useEffect`. `useEffect` is called whenever the component gets rendered on the page:
 
 ```javascript
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect } from 'react';
 import { getBackgroundType, getType, loadPokemon } from 'helper/pokemonHelpers';
 
 const App = () => {
@@ -25,49 +25,23 @@ const App = () => {
 
   useEffect(() => {
     const fetcPokemon = async () => {
-        try {
-            const pokemonResults = await loadPokemon();
-        } catch (err) {
-            console.error(err);
-        }
-    }
+      try {
+        const pokemonResults = await loadPokemon();
+      } catch (err) {
+        console.error(err);
+      }
+    };
     fetchResults();
-  }, [])
+  }, []);
 
   return (
     <StyledContainer className='site-card-wrapper'>
-      <h1>Hi there, my name is {name}! Welcome to my Pokedex!</h1>
-      <p>Hi Im a paragraph in React</p>
       <Row>
-        <Col span={8}>
-          <StyledCard typeName={getBackgroundType('grass')}>
-            <Space align='start'>
-              <div>
-                <StyledTitle>Bulbasaur</StyledTitle>
-                <StyledButton
-                  typeName={getType('grass')}
-                  width={'100'}
-                  shape='round'
-                  size='small'
-                >
-                  Grass
-                </StyledButton>
-                <StyledButton
-                  typeName={getType('poison')}
-                  width={'100'}
-                  shape='round'
-                  size='small'
-                >
-                  Poison
-                </StyledButton>
-              </div>
-              <StyledImage alt='' src={getPokemonImage('1')} />
-            </Space>
-          </StyledCard>
-        </Col>
+        <PokeCard />
       </Row>
     </StyledContainer>
   );
+};
 ```
 
 Check the Network panel of your Developer Tools to see that it is making an API call.
@@ -93,36 +67,10 @@ const App = () => {
 
   return (
     <StyledContainer className='site-card-wrapper'>
-      <h1>Hi there, my name is {name}! Welcome to my Pokedex!</h1>
-      <p>Hi Im a paragraph in React</p>
       <Row>
-        <Col span={8}>
-          <StyledCard typeName={getBackgroundType('grass')}>
-            <Space align='start'>
-              <div>
-                <StyledTitle>Bulbasaur</StyledTitle>
-                <StyledButton
-                  typeName={getType('grass')}
-                  width={'100'}
-                  shape='round'
-                  size='small'
-                >
-                  Grass
-                </StyledButton>
-                <StyledButton
-                  typeName={getType('poison')}
-                  width={'100'}
-                  shape='round'
-                  size='small'
-                >
-                  Poison
-                </StyledButton>
-              </div>
-              <StyledImage alt='' src={getPokemonImage('1')} />
-            </Space>
-          </StyledCard>
-        </Col>
+        <PokeCard />
       </Row>
     </StyledContainer>
   );
+};
 ```
