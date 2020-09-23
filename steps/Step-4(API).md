@@ -1,4 +1,4 @@
-# Step 1 - Styled Components
+# Step 3 - API
 
 After creating a cool looking card we need to populate it with real time data instead of static data.
 

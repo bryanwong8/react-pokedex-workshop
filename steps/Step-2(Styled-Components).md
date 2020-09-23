@@ -1,4 +1,4 @@
-# Step 1 - Styled Components
+# Step 2 - Styled Components
 
 We currently created a basic Pokemon card, but it looks not the best currently. We are going to use a package called styled-components to style the component that we created.
 
