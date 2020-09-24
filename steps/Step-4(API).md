@@ -14,7 +14,7 @@ After creating a cool looking card we need to populate it with real time data in
 
 ## 📚 Tasks
 
-Import the `loadPokemon` from helper function, `useEffect` and `useState` functions from React. Afterwards call `loadPokemon()` in `useEffect`. `useEffect` is called whenever the component gets rendered on the page:
+Import the `loadPokemon` from `helper/pokemonHelpers`. Also import `useEffect` and `useState` functions from React. Afterwards call `loadPokemon()` in `useEffect`. `useEffect` is called whenever the component gets rendered on the page:
 
 ```javascript
 import React, { useState, useEffect } from 'react';
@@ -27,6 +27,7 @@ const App = () => {
     const fetcPokemon = async () => {
       try {
         const pokemonResults = await loadPokemon();
+        console.log(pokemonResults);
       } catch (err) {
         console.error(err);
       }
