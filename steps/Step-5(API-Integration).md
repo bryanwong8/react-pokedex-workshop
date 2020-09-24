@@ -47,9 +47,13 @@ const App = () => {
   return (
     <StyledContainer className='site-card-wrapper'>
       <Row>
-        {pokemon.map(pokemon => {
-          <PokeCard key={pokemon.name} name={pokemon.name} url={pokemon.url} />;
-        })}
+        {pokemon.map(selectedPokemon => (
+          <PokeCard
+            key={selectedPokemon.name}
+            name={selectedPokemon.name}
+            url={selectedPokemon.url}
+          />
+        ))}
       </Row>
     </StyledContainer>
   );
@@ -61,7 +65,7 @@ We can use the `pokemon.url` to retrieve data based on a specific pokemon.
 NOTE: Before moving on make sure to import `useEffect` and `useState` from react. Also import loadSelectedPokemon from `helper/pokemonHelpers`.
 
 ```javascript
-import { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { uppercaseWord } from 'helper/shared';
 import {
   loadSelectedPokemon,
@@ -124,7 +128,7 @@ return (
 Since the typing of each Pokemon is also dynamic, lets change `PokeType` by passing the types data from the API:
 
 ```javascript
-const PokeTypes = props => {
+const PokeType = props => {
   return (
     <div>
       {props?.types?.map(typing => (
@@ -154,7 +158,7 @@ return (
       <Space align='start'>
         <div>
           <StyledTitle>{uppercaseWord(props.name)}</StyledTitle>
-          <PokeTypes types={pokemonDetail?.types} width='100' />
+          <PokeType types={pokemonDetail?.types} width='100' />
         </div>
         <StyledImage alt='' src={getPokemonImage(pokemonDetail?.id)} />
       </Space>
