@@ -26,7 +26,7 @@ npm i
 
 This will likely take a few minutes to run. It will clone the repo, install all of the JavaScript dependencies needed to build our app.
 
-# Running the App
+# 🏃🏻 Running the App
 
 We will be building a Pokedex in this workshop. To get started and verify that everything has been installed correctly, run:
 
@@ -38,14 +38,27 @@ The app should pop up in your default browser running at http://localhost:3000/.
 
 # Workshop Outline
 
-## Schedule
+## 🕐 Schedule
 
 Each step in the workshop builds on top of the previous one. If at any point you get stuck, you can find the answers in the source code of the current step. Any step can be used as a starting point to continue on to the remaining steps. Each step will be in a different branch.
 
 - Setup/Intro
-- JSX syntax and Ant design
-- Styled Components
-- Writing readable, reusable and composable components
-- API calls with `useEffect` and `useState` for state management
-- Integrating API data with components
-- Conditionally rendering components
+- JSX syntax and Ant design -> [Step 1](https://github.com/wongband/react-pokedex-workshop/blob/master/steps/Step-1(JSX).md) 
+- Styled Components -> [Step 2](https://github.com/wongband/react-pokedex-workshop/blob/master/steps/Step-2(Styled-Components).md)
+- Writing readable, reusable and composable components -> [Step 3](https://github.com/wongband/react-pokedex-workshop/blob/master/steps/Step-3(Separating-components).md)
+- API calls with `useEffect` and `useState` for state management -> [Step 4](https://github.com/wongband/react-pokedex-workshop/blob/master/steps/Step-4(API).md)
+- Integrating API data with components -> [Step 5](https://github.com/wongband/react-pokedex-workshop/blob/master/steps/Step-5(API-Integration).md)
+- Conditionally rendering components -> [Step 6] (https://github.com/wongband/react-pokedex-workshop/blob/master/steps/Step-6(Conditional-Rendering).md)
+
+❓ Asking Questions
+- Please interrupt me and ask questions! Others likely will have the same question.
+
+## 🌟 Concepts
+- Using JSX syntax -> [Step 1](https://github.com/wongband/react-pokedex-workshop/blob/master/steps/Step-1(JSX).md)
+- Using third party styling libraries -> [Step 1](https://github.com/wongband/react-pokedex-workshop/blob/master/steps/Step-1(JSX).md)
+- Separating components to make readable, reusable and composable components -> [Step 3](https://github.com/wongband/react-pokedex-workshop/blob/master/steps/Step-3(Separating-components).md)
+- Managing component state with `useState` -> [Step 4](https://github.com/wongband/react-pokedex-workshop/blob/master/steps/Step-4(API).md)
+- Making API calls with `useEffect` -> [Step 4](https://github.com/wongband/react-pokedex-workshop/blob/master/steps/Step-4(API).md)
+- Integrating API data with Components -> [Step 5](https://github.com/wongband/react-pokedex-workshop/blob/master/steps/Step-5(API-Integration).md)
+- Conditionally rendering components -> [Step 6] (https://github.com/wongband/react-pokedex-workshop/blob/master/steps/Step-6(Conditional-Rendering).md)
+- Using Styled-Components -> Throughout every step
