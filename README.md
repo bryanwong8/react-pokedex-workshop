@@ -66,3 +66,6 @@ Each step in the workshop builds on top of the previous one. If at any point you
 - Integrating API data with Components -> [Step 5](https://github.com/wongband/react-pokedex-workshop/blob/master/steps/Step-5(API-Integration).md)
 - Conditionally rendering components -> [Step 6](https://github.com/wongband/react-pokedex-workshop/blob/master/steps/Step-6(Conditional-Rendering).md)
 - Using Styled-Components -> Throughout every step
+
+## 🤝 Code of Conduct
+All attendees, speakers, sponsors and volunteers at this workshop are required to agree with the [code of conduct](https://github.com/wongband/react-pokedex-workshop/blob/master/CODE_OF_CONDUCT.md). Organizers will enforce this code throughout the event. We expect cooperation from all participants to help ensure a safe environment for everybody.
