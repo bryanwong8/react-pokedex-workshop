@@ -4,7 +4,7 @@ Now that we have some actual data, we can now display it.
 
 ## 🥇 Goal
 
-- The goal of this step is to display the list of Pokemon that we retrieved and display them.
+The goal of this step is to display the list of Pokemon that we retrieved and display them.
 
 ## 🎬 Concepts
 
@@ -25,7 +25,7 @@ pokemon.map(selectedPokemon => {
 });
 ```
 
-We need to convert the array of `pokemon` into an array of components so that we can render the images, name and typing.There are several ways, but the most common approach is to use `Array.prototype.map`:
+We need to convert the array of `pokemon` into an array of components so that we can render the images, name and typing.There are several ways, but the most common approach is to use [Array.prototype.map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map):
 
 ```javascript
 const App = () => {

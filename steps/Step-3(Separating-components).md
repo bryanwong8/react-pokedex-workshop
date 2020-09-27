@@ -4,7 +4,7 @@ At this point we have the basics of what we want for our app. The only steps lef
 
 ## 🥇 Goal
 
-- The goal of this step is to practice creating and composing React components. Components let you split the UI into independent, reusable pieces, and think about each piece in isolation. Components can refer to other components in their output. This lets us use the same component abstraction for any level of detail. A button, a form, a dialog, a screen, etc. In React apps, all of these are commonly expressed as components.
+The goal of this step is to practice creating and composing React components. Components let you split the UI into independent, reusable pieces, and think about each piece in isolation. Components can refer to other components in their output. This lets us use the same component abstraction for any level of detail. A button, a form, a dialog, a screen, etc. In React apps, all of these are commonly expressed as components.
 
 Conceptually, components are like JavaScript functions. They accept arbitrary inputs (called "props") and return React elements describing what should appear on the screen.
 
@@ -77,7 +77,7 @@ export default PokeCard;
 
 `NOTE: Move the StyledCard, StyledTitle, StyledButton and StyledImage to PokeCard.js as well.`
 
-Back in App.js, we'll import PokeCard.js at the top of the file:
+Back in `src/App.js`, we'll import `PokeCard` at the top of the file:
 
 ```javascript
 import React from 'react';
@@ -114,7 +114,7 @@ const PokeType = () => {
 export default PokeType;
 ```
 
-Next copy over the types components from `src/components/PokeCard` into PokeType:
+Next copy over the types components from `src/components/PokeCard.js` into PokeType:
 
 ```javascript
 import * as React from 'react';
