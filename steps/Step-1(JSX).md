@@ -6,8 +6,7 @@ Unlike browser DOM elements, React elements are plain objects, and are cheap to 
 
 ## 🥇 Goal
 
-- Practice with JSX
-- Practice using third party React UI libraries
+The goal of this step is to practice using JSX syntax by adding elements to the `src/App.js` file. This step also serves to learn how to use React UI Libraries to lessen the amount of work you need to do when it comes to styling elements.
 
 ## 🎬 Concepts
 
@@ -64,7 +63,7 @@ const App = () => {
 };
 ```
 
-Now lets add some style libraries to make our lives easier. In order to use the library we must import it from the library like so:
+Now lets add some style libraries to make our lives easier. In order to use components from a library, we must import it. In our case we are going to import the [Card](https://ant.design/components/card/) component from [Ant Design](https://ant.design/).
 
 ```javascript
 import React from 'react';

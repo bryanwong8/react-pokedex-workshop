@@ -4,8 +4,7 @@ We currently created a basic Pokemon card, but it looks not the best currently. 
 
 ## 🥇 Goal
 
-- Practice with styled-components
-- More practice with JSX
+The goal of this step is to practice using styled-components to style components. This step is also used to continue practicing JSX syntax.
 
 ## 🎬 Concepts
 
@@ -14,7 +13,7 @@ We currently created a basic Pokemon card, but it looks not the best currently. 
 
 ## 📚 Tasks
 
-In the same `src/App.js` file, there already should be a variable called `StyledCard`. Lets apply the style like so:
+[Styled components](https://styled-components.com/) is used to style elements and components in a very easy way. In the same `src/App.js` file, there already should be a variable called `StyledCard`. Lets apply the style like so:
 
 ```javascript
 const App = () => {
@@ -61,9 +60,11 @@ const App = () => {
 };
 ```
 
-Now we can continue formatting the Pokedex so it can be formatted in rows:
+Afterwards import the [Row](https://ant.design/components/grid/) and [Col](https://ant.design/components/grid/) component from Ant Design. Now we can continue formatting the Pokedex so it can be formatted in rows:
 
 ```javascript
+import { Card, Row } from 'antd';
+
 const App = () => {
   const name = 'Bryan Wong';
 
@@ -83,7 +84,7 @@ const App = () => {
 };
 ```
 
-After getting the Row and Column done we can format how the card looks like with the Space component from Ant Design:
+After getting the [Row](https://ant.design/components/grid/) and [Col](https://ant.design/components/grid/) done we can format how the card looks like with the [Space](https://ant.design/components/space/) component from Ant Design:
 
 ```javascript
 const StyledTitle = styled.h2`

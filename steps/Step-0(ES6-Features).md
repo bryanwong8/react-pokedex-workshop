@@ -4,7 +4,7 @@ Javascript has many unique features, and before we start building our Pokedex, w
 
 ## 🥇 Goal
 
-- Practice some commonly used Javascript features
+The goal of this step is to practice some commonly used Javascript features that we will be using in the Pokedex app.
 
 ## 🎬 Concepts
 
@@ -14,7 +14,7 @@ Javascript has many unique features, and before we start building our Pokedex, w
 
 ### Template Strings
 
-This is just a way to combine variables and strings together.
+This is just a way to combine variables and strings together. For more information take a look at [this](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals).
 
 Old Way:
 
@@ -34,7 +34,7 @@ var name = 'Hi, my name is ${first} .';
 
 ### Arrow Functions
 
-This is just a new way to write functions very quickly without worrying about any uneccessary mutations.
+This is just a new way to write functions very quickly. You can look more into this feature by looking at [this](https://www.w3schools.com/js/js_arrow_function.asp)
 
 Old Way:
 
@@ -53,6 +53,8 @@ const sayHello = () => {
 ```
 
 ### Array and Object destructuring
+
+[Array and object destructuring](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment).
 
 Old Way:
 
@@ -102,7 +104,7 @@ console.log(firstValue, secondValue);
 
 ### Ternary if statements
 
-This is just a fancy word to make if statements more concise
+This is just a fancy word to make if statements more concise. [More info](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator).
 
 Old Way:
 
