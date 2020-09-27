@@ -2,10 +2,6 @@
 
 All attendees, speakers, sponsors and volunteers at this workshop are required to agree with the following code of conduct. Organizers will enforce this code throughout the event. We expect cooperation from all participants to help ensure a safe environment for everybody.
 
-## Have questions or need to report an issue?
-
-Please email Bryan Wong (bryanwong7788@gmail.com)
-
 ## The Quick Version
 
 Our workshop is dedicated to providing a harassment-free workshop experience for everyone, regardless of gender, gender identity and expression, age, sexual orientation, disability, physical appearance, body size, race, ethnicity, religion (or lack thereof), or technology choices. We do not tolerate harassment of workshop participants in any form. Sexual language and imagery is not appropriate for any workshop venue, including presentations, comments, questions, video chat, Twitter and other online media. Workshop participants violating these rules may be sanctioned or expelled from the workshop _without a refund_ at the discretion of the workshop organizers.
