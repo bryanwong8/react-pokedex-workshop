@@ -64,5 +64,5 @@ Each step in the workshop builds on top of the previous one. If at any point you
 - Managing component state with `useState` -> [Step 4](https://github.com/wongband/react-pokedex-workshop/blob/master/steps/Step-4(API).md)
 - Making API calls with `useEffect` -> [Step 4](https://github.com/wongband/react-pokedex-workshop/blob/master/steps/Step-4(API).md)
 - Integrating API data with Components -> [Step 5](https://github.com/wongband/react-pokedex-workshop/blob/master/steps/Step-5(API-Integration).md)
-- Conditionally rendering components -> [Step 6] (https://github.com/wongband/react-pokedex-workshop/blob/master/steps/Step-6(Conditional-Rendering).md)
+- Conditionally rendering components -> [Step 6](https://github.com/wongband/react-pokedex-workshop/blob/master/steps/Step-6(Conditional-Rendering).md)
 - Using Styled-Components -> Throughout every step
