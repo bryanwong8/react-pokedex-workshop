@@ -4,7 +4,7 @@ All attendees, speakers, sponsors and volunteers at this workshop are required t
 
 ## Have questions or need to report an issue?
 
-Please email Ben Ilegbodu at ben@benmvp.com.
+Please email Bryan Wong (bryanwong7788@gmail.com)
 
 ## The Quick Version
 
