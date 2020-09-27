@@ -1,4 +1,8 @@
-# Requirements
+# Intro
+
+Hello there! Welcome to the world of pokémon! My name is Bryan! People call me the pokémon Prof! This world is inhabited by creatures called pokémon! For some people, pokémon are pets. Others use them for fights. Myself...I study pokémon as a profession. I will be your guide on how to create your very own Pokedex so you start your own pokémon journey!
+
+# System Requirements
 
 - git v2 or higher (https://git-scm.com/downloads)
 - Node.js v10 or higher (https://nodejs.org/en/download/)
@@ -45,12 +49,12 @@ Each step in the workshop builds on top of the previous one. If at any point you
 - Setup/Intro
 - JSX syntax and Ant design -> [Step 1](https://github.com/wongband/react-pokedex-workshop/blob/master/steps/Step-1(JSX).md) 
 - Styled Components -> [Step 2](https://github.com/wongband/react-pokedex-workshop/blob/master/steps/Step-2(Styled-Components).md)
-- Writing readable, reusable and composable components -> [Step 3](https://github.com/wongband/react-pokedex-workshop/blob/master/steps/Step-3(Separating-components).md)
-- API calls with `useEffect` and `useState` for state management -> [Step 4](https://github.com/wongband/react-pokedex-workshop/blob/master/steps/Step-4(API).md)
+- Components -> [Step 3](https://github.com/wongband/react-pokedex-workshop/blob/master/steps/Step-3(Separating-components).md)
+- API -> [Step 4](https://github.com/wongband/react-pokedex-workshop/blob/master/steps/Step-4(API).md)
 - Integrating API data with components -> [Step 5](https://github.com/wongband/react-pokedex-workshop/blob/master/steps/Step-5(API-Integration).md)
 - Conditionally rendering components -> [Step 6] (https://github.com/wongband/react-pokedex-workshop/blob/master/steps/Step-6(Conditional-Rendering).md)
 
-❓ Asking Questions
+## ❓ Asking Questions
 - Please interrupt me and ask questions! Others likely will have the same question.
 
 ## 🌟 Concepts
