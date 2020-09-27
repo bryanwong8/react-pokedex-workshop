@@ -4,7 +4,7 @@ When we click on a `PokeCard` we should have an option to display it.
 
 ## 🥇 Goal
 
-- The goal of this step is to learn how to conditionally render components as well as integrating the other concepts we learned so far.
+The goal of this step is to learn how to conditionally render components as well as integrating the other concepts we learned so far.
 
 ## 🎬 Concepts
 
