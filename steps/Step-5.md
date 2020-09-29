@@ -15,15 +15,7 @@ The goal of this step is to display the list of Pokemon that we retrieved and di
 ## 📚 Tasks
 
 Before displaying the array of components, lets go over how
-the JSON data looks like.
-
-For example, we can see how each data looks like through:
-
-```javascript
-pokemon.map(selectedPokemon => {
-  console.log(selectedPokemon);
-});
-```
+the JSON data looks like in the network tab.
 
 We need to convert the array of `pokemon` into an array of components so that we can render the images, name and typing.There are several ways, but the most common approach is to use [Array.prototype.map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map):
 

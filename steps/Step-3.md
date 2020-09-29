@@ -193,3 +193,4 @@ const PokeCard = () => {
 
 export default PokeCard;
 ```
+
