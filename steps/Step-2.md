@@ -197,4 +197,4 @@ const App = () => {
 ```
 
 👉🏾 Next Step
-Go to [Step 3 - Components.]('https://github.com/wongband/react-pokedex-workshop/blob/master/steps/Step-2(Styled-Components).md)
+Go to [Step 3 - Components.]('https://github.com/wongband/react-pokedex-workshop/blob/master/steps/Step-3.md)
