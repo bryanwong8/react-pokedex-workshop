@@ -71,4 +71,5 @@ Each step in the workshop builds on top of the previous one. If at any point you
 All attendees, speakers, sponsors and volunteers at this workshop are required to agree with the [code of conduct](https://github.com/wongband/react-pokedex-workshop/blob/master/CODE_OF_CONDUCT.md). Organizers will enforce this code throughout the event. We expect cooperation from all participants to help ensure a safe environment for everybody.
 
 ## 👉🏾 First Step
-Go to [Step 0 - Begin.]('https://github.com/wongband/react-pokedex-workshop/blob/master/steps/Step-0.md')
+
+Go to [Step 0 - Begin]('https://github.com/wongband/react-pokedex-workshop/blob/master/steps/Step-0.md')

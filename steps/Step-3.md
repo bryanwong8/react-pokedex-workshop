@@ -195,4 +195,5 @@ export default PokeCard;
 ```
 
 👉🏾 Next Step
-Go to [Step 4 - API.]('https://github.com/wongband/react-pokedex-workshop/blob/master/steps/Step-4.md)
+
+Go to [Step 4 - API]('https://github.com/wongband/react-pokedex-workshop/blob/master/steps/Step-4.md)
