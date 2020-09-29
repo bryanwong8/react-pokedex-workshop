@@ -177,6 +177,15 @@ const StyledContent = styled(Content)`
   padding: 28px;
 `;
 
+const StyledImage = styled.img`
+  width: 40%;
+  margin-top: 2em;
+`;
+
+const StyledImageContainer = styled.div`
+  text-align: center;
+`;
+
 const StyledLayout = styled(Layout)`
   background-color: ${props => props.typeName};
 `;
@@ -202,15 +211,6 @@ const StyledTitle = styled.h1`
 Now that the modal looks a bit more presentable, we are going to add `PokeTypes` and an image for the modal as well as some style to it:
 
 ```javascript
-const StyledImage = styled.img`
-  width: 40%;
-  margin-top: 2em;
-`;
-
-const StyledImageContainer = styled.div`
-  text-align: center;
-`;
-
 return (
   <StyledModal
     visible={props.pokemonDetail !== null}
