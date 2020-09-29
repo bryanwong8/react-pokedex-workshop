@@ -72,4 +72,4 @@ All attendees, speakers, sponsors and volunteers at this workshop are required t
 
 ## 👉🏾 First Step
 
-Go to [Step 0 - Begin]('https://github.com/wongband/react-pokedex-workshop/blob/master/steps/Step-0.md')
+Go to [Step 0 - Begin](https://github.com/wongband/react-pokedex-workshop/blob/master/steps/Step-0.md)
