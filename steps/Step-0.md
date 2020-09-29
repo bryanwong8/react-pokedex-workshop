@@ -129,4 +129,4 @@ console.log(firstValue, secondValue);
 
 👉🏾 Next Step
 
-Go to [Step 1 - JSX]('https://github.com/wongband/react-pokedex-workshop/blob/master/steps/Step-1.md')
+Go to [Step 1 - JSX](https://github.com/wongband/react-pokedex-workshop/blob/master/steps/Step-1.md)

@@ -160,4 +160,4 @@ return (
 ```
 
 👉🏾 Next Step
-Go to [Step 5 - Conditional Rendering.]('https://github.com/wongband/react-pokedex-workshop/blob/master/steps/Step-6.md)
+Go to [Step 5 - Conditional Rendering](https://github.com/wongband/react-pokedex-workshop/blob/master/steps/Step-6.md)

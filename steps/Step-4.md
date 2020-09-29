@@ -78,4 +78,4 @@ const App = () => {
 
 👉🏾 Next Step
 
-Go to [Step 5 - API Integration]('https://github.com/wongband/react-pokedex-workshop/blob/master/steps/Step-5.md)
+Go to [Step 5 - API Integration](https://github.com/wongband/react-pokedex-workshop/blob/master/steps/Step-5.md)
