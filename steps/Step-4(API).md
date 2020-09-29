@@ -24,7 +24,7 @@ const App = () => {
   const name = 'Bryan Wong';
 
   useEffect(() => {
-    const fetcPokemon = async () => {
+    const fetchPokemon = async () => {
       try {
         const pokemonResults = await loadPokemon();
         console.log(pokemonResults);

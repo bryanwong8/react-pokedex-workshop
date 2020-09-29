@@ -18,18 +18,10 @@ The goal of this step is to practice using JSX syntax by adding elements to the 
 In the `src/App.js` file, replace the `null` with some JSX. An example would be this:
 
 ```javascript
-const App = () => {
-  return <div>Hi there!</div>;
-};
-```
-
-You will need to import React in order use JSX.
-
-```javascript
 import React from 'react';
 
 const App = () => {
-  return <main>Hi there!</main>;
+  return <div>Hi there!</div>;
 };
 
 export default App;
