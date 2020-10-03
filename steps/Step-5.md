@@ -22,7 +22,6 @@ We need to convert the array of `pokemon` into an array of components so that we
 ```javascript
 const App = () => {
   const [pokemon, setPokemon] = useState([]);
-  const name = 'Bryan Wong';
 
   useEffect(() => {
     const fetchPokemon = async () => {
@@ -54,7 +53,7 @@ const App = () => {
 
 We can use the `pokemon.url` to retrieve data based on a specific pokemon.
 
-NOTE: Before moving on make sure to import `useEffect` and `useState` from react. Also import loadSelectedPokemon from `helper/pokemonHelpers`.
+NOTE: Before moving on make sure to import `useEffect` and `useState` from react. Also import `loadSelectedPokemon` from `helper/pokemonHelpers`.
 
 ```javascript
 import React, { useEffect, useState } from 'react';

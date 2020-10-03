@@ -21,8 +21,6 @@ import React, { useState, useEffect } from 'react';
 import { getBackgroundType, getType, loadPokemon } from 'helper/pokemonHelpers';
 
 const App = () => {
-  const name = 'Bryan Wong';
-
   useEffect(() => {
     const fetchPokemon = async () => {
       try {
@@ -52,7 +50,6 @@ In order to render the Pokemon data and images, we need to save the results in s
 ```javascript
 const App = () => {
   const [pokemon, setPokemon] = useState([]);
-  const name = 'Bryan Wong';
 
   useEffect(() => {
     const fetchPokemon = async () => {

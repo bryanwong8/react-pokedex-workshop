@@ -141,9 +141,9 @@ Now lets create a new component called `PokeModal` in `src/components`:
 ```javascript
 import * as React from 'react';
 import { Layout, Modal } from 'antd';
-import styled from 'styled-components';
 import { calculateStatTotal, uppercaseWord } from 'helper/shared';
 import { getBackgroundType, getPokemonImage } from 'helper/pokemonHelpers';
+import styled from 'styled-components';
 import PokeType from 'components/PokeType';
 
 const { Footer, Content } = Layout;
