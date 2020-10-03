@@ -21,8 +21,6 @@ const App = () => {
 
   return (
     <div>
-      <h1>Hi there, my name is {name}! Welcome to my Pokedex!</h1>
-      <p>Hi Im a paragraph in React</p>
       <StyledCard>
         <img alt='' src={getPokemonImage('1')} />
       </StyledCard>
@@ -46,12 +44,8 @@ const StyledImage = styled.img`
 `;
 
 const App = () => {
-  const name = 'Bryan Wong';
-
   return (
     <StyledContainer>
-      <h1>Hi there, my name is {name}! Welcome to my Pokedex!</h1>
-      <p>Hi Im a paragraph in React</p>
       <StyledCard>
         <StyledImage alt='' src={getPokemonImage('1')} />
       </StyledCard>
@@ -60,18 +54,16 @@ const App = () => {
 };
 ```
 
-Afterwards import the [Row](https://ant.design/components/grid/) and [Col](https://ant.design/components/grid/) component from Ant Design. Now we can continue formatting the Pokedex so it can be formatted in rows:
+Afterwards import the [Row](https://ant.design/components/grid/), [Col](https://ant.design/components/grid/) and [Space](https://ant.design/components/space/) component from Ant Design. Now we can continue formatting the Pokedex so it can be formatted in rows:
 
 ```javascript
-import { Card, Row } from 'antd';
+import { Card, Col, Row, Space } from 'antd';
 
 const App = () => {
   const name = 'Bryan Wong';
 
   return (
     <StyledContainer>
-      <h1>Hi there, my name is {name}! Welcome to my Pokedex!</h1>
-      <p>Hi Im a paragraph in React</p>
       <Row>
         <Col span={8}>
           <StyledCard>
@@ -96,8 +88,6 @@ const App = () => {
 
   return (
     <StyledContainer>
-      <h1>Hi there, my name is {name}! Welcome to my Pokedex!</h1>
-      <p>Hi Im a paragraph in React</p>
       <Row>
         <Col span={8}>
           <StyledCard>
@@ -125,8 +115,6 @@ const App = () => {
 
   return (
     <StyledContainer>
-      <h1>Hi there, my name is {name}! Welcome to my Pokedex!</h1>
-      <p>Hi Im a paragraph in React</p>
       <Row>
         <Col span={8}>
           <StyledCard typeName={getBackgroundType('grass')}>
@@ -161,8 +149,6 @@ const App = () => {
 
   return (
     <StyledContainer className='site-card-wrapper'>
-      <h1>Hi there, my name is {name}! Welcome to my Pokedex!</h1>
-      <p>Hi Im a paragraph in React</p>
       <Row>
         <Col span={8}>
           <StyledCard typeName={getBackgroundType('grass')}>
