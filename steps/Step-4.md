@@ -30,7 +30,7 @@ const App = () => {
         console.error(err);
       }
     };
-    fetchResults();
+    fetchPokemon();
   }, []);
 
   return (
