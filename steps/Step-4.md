@@ -18,7 +18,7 @@ Import the `loadPokemon` from `helper/pokemonHelpers`. Also import [useEffect](h
 
 ```javascript
 import React, { useState, useEffect } from 'react';
-import { getBackgroundType, getType, loadPokemon } from 'helper/pokemonHelpers';
+import { loadPokemon } from 'helper/pokemonHelpers';
 
 const App = () => {
   useEffect(() => {
