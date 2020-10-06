@@ -170,7 +170,31 @@ const PokeModal = props => {
 export default PokeModal;
 ```
 
-Lets take this time and add some style to the `Modal`, `Layout`, `Content`, and `h1`:
+After this lets replace the h1 tag in `src/App.js` with our new `PokeModal` component:
+```javascript
+ return (
+    <StyledContainer className='site-card-wrapper'>
+      {selectedPokemon !== null ? (
+        <PokeModal
+          pokemonDetail={selectedPokemon}
+          changeSelected={setSelectedPokemon}
+        />
+      ) : null}
+      <Row>
+        {pokemon?.map(selectedPokemon => (
+          <PokeCard
+            key={selectedPokemon.name}
+            name={selectedPokemon.name}
+            url={selectedPokemon.url}
+            changeSelected={setSelectedPokemon}
+          />
+        ))}
+      </Row>
+    </StyledContainer>
+  );
+```
+
+Now lets take this time and add some style to the `Modal`, `Layout`, `Content`, and `h1`:
 
 ```javascript
 const StyledContent = styled(Content)`
@@ -333,49 +357,4 @@ return (
 );
 ```
 
-All that's left is to conditionally render the `PokeModal` in `src/App.js`:
-
-```javascript
-import PokeModal from 'components/PokeModal';
-
-const App = () => {
-  const [selectedPokemon, setSelectedPokemon] = useState(null);
-  const [pokemon, setPokemon] = useState([]);
-
-  useEffect(() => {
-    const loadedPokemon = async () => {
-      try {
-        const apiResponse = await loadPokemon();
-        setPokemon(apiResponse.results);
-      } catch (err) {
-        console.log(err);
-      }
-    };
-
-    loadedPokemon();
-  }, []);
-
-  return (
-    <StyledContainer className='site-card-wrapper'>
-      {selectedPokemon !== null ? (
-        <PokeModal
-          pokemonDetail={selectedPokemon}
-          changeSelected={setSelectedPokemon}
-        />
-      ) : null}
-      <Row>
-        {pokemon?.map(selectedPokemon => (
-          <PokeCard
-            key={selectedPokemon.name}
-            name={selectedPokemon.name}
-            url={selectedPokemon.url}
-            changeSelected={setSelectedPokemon}
-          />
-        ))}
-      </Row>
-    </StyledContainer>
-  );
-};
-
-export default App;
-```
+And just like that we're done!
