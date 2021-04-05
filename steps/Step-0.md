@@ -29,7 +29,7 @@ We can use `${NAME}` inside the string instead
 
 ```javascript
 var first = 'Bryan';
-var name = 'Hi, my name is ${first} .';
+var name = `Hi, my name is ${first} .`;
 ```
 
 ### Ternary if statements
