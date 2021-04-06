@@ -50,7 +50,7 @@ const PokeCard = () => {
             <StyledTitle>Bulbasaur</StyledTitle>
             <StyledButton
               typeName={getType('grass')}
-              width={'100'}
+              width='100'
               shape='round'
               size='small'
             >
@@ -58,7 +58,7 @@ const PokeCard = () => {
             </StyledButton>
             <StyledButton
               typeName={getType('poison')}
-              width={'100'}
+              width='100'
               shape='round'
               size='small'
             >
@@ -136,7 +136,7 @@ const PokeType = () => {
   return (
     <StyledButton
       typeName={getType('grass')}
-      width={'100'}
+      width='100'
       shape='round'
       size='small'
     >
@@ -181,8 +181,8 @@ const PokeCard = () => {
         <Space align='start'>
           <div>
             <StyledTitle>Bulbasaur</StyledTitle>
-            <PokeType type='grass' width={'100'} />
-            <PokeType type='poison' width={'100'} />
+            <PokeType type='grass' width='100' />
+            <PokeType type='poison' width='100' />
           </div>
           <StyledImage alt='' src={getPokemonImage('1')} />
         </Space>
