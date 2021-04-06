@@ -17,8 +17,6 @@ The goal of this step is to practice using styled-components to style components
 
 ```javascript
 const App = () => {
-  const name = 'Bryan Wong';
-
   return (
     <div>
       <StyledCard>
@@ -60,8 +58,6 @@ Afterwards import the [Row](https://ant.design/components/grid/), [Col](https://
 import { Card, Col, Row, Space } from 'antd';
 
 const App = () => {
-  const name = 'Bryan Wong';
-
   return (
     <StyledContainer>
       <Row>
@@ -84,8 +80,6 @@ const StyledTitle = styled.h2`
 `;
 
 const App = () => {
-  const name = 'Bryan Wong';
-
   return (
     <StyledContainer>
       <Row>
@@ -111,8 +105,6 @@ Now lets add some functions that can help make the our PokeCard look better and 
 import { getBackgroundType, getType } from 'helper/pokemonHelpers';
 
 const App = () => {
-  const name = 'Bryan Wong';
-
   return (
     <StyledContainer>
       <Row>
@@ -145,8 +137,6 @@ const StyledButton = styled(Button)`
 `;
 
 const App = () => {
-  const name = 'Bryan Wong';
-
   return (
     <StyledContainer className='site-card-wrapper'>
       <Row>
