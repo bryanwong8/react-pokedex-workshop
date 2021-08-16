@@ -50,7 +50,7 @@ const PokeCard = () => {
             <StyledTitle>Bulbasaur</StyledTitle>
             <StyledButton
               typeName={getType('grass')}
-              width={'100'}
+              width='100'
               shape='round'
               size='small'
             >
@@ -58,7 +58,7 @@ const PokeCard = () => {
             </StyledButton>
             <StyledButton
               typeName={getType('poison')}
-              width={'100'}
+              width='100'
               shape='round'
               size='small'
             >
@@ -82,8 +82,8 @@ Back in `src/App.js`, we'll import `PokeCard` at the top of the file:
 ```javascript
 import React from 'react';
 import { Row } from 'antd';
-import styled from 'styled-components';
 import PokeCard from 'components/PokeCard';
+import styled from 'styled-components';
 ```
 
 In place of where the PokeCard display code used to be, we'll render <PokeCard />.
@@ -119,9 +119,9 @@ Next copy over the types components from `src/components/PokeCard.js` into PokeT
 ```javascript
 import * as React from 'react';
 import { Button } from 'antd';
-import styled from 'styled-components';
 import { getType } from 'helper/pokemonHelpers';
 import { uppercaseWord } from 'helper/shared';
+import styled from 'styled-components';
 
 const StyledButton = styled(Button)`
   background-color: ${props => props.typeName};
@@ -136,7 +136,7 @@ const PokeType = () => {
   return (
     <StyledButton
       typeName={getType('grass')}
-      width={'100'}
+      width='100'
       shape='round'
       size='small'
     >
@@ -181,8 +181,8 @@ const PokeCard = () => {
         <Space align='start'>
           <div>
             <StyledTitle>Bulbasaur</StyledTitle>
-            <PokeType type='grass' width={'100'} />
-            <PokeType type='poison' width={'100'} />
+            <PokeType type='grass' width='100' />
+            <PokeType type='poison' width='100' />
           </div>
           <StyledImage alt='' src={getPokemonImage('1')} />
         </Space>

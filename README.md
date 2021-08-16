@@ -52,7 +52,7 @@ Each step in the workshop builds on top of the previous one. If at any point you
 - Components -> [Step 3](https://github.com/wongband/react-pokedex-workshop/blob/master/steps/Step-3(Separating-components).md)
 - API -> [Step 4](https://github.com/wongband/react-pokedex-workshop/blob/master/steps/Step-4(API).md)
 - Integrating API data with components -> [Step 5](https://github.com/wongband/react-pokedex-workshop/blob/master/steps/Step-5(API-Integration).md)
-- Conditionally rendering components -> [Step 6] (https://github.com/wongband/react-pokedex-workshop/blob/master/steps/Step-6(Conditional-Rendering).md)
+- Conditionally rendering components -> [Step 6](https://github.com/wongband/react-pokedex-workshop/blob/master/steps/Step-6(Conditional-Rendering).md)
 
 ## ❓ Asking Questions
 - Please interrupt me and ask questions! Others likely will have the same question.
