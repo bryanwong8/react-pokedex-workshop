@@ -63,7 +63,7 @@ const App = () => {
       <Row>
         <Col span={8}>
           <StyledCard>
-            <StyledImage alt='' src={getPokemonImage('1')} />
+            <img alt='' src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png" />
           </StyledCard>
         </Col>
       </Row>
@@ -89,7 +89,7 @@ const App = () => {
               <div>
                 <StyledTitle>Bulbasaur</StyledTitle>
               </div>
-              <StyledImage alt='' src={getPokemonImage('1')} />
+              <img alt='' src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png" />
             </Space>
           </StyledCard>
         </Col>
@@ -114,7 +114,7 @@ const App = () => {
               <div>
                 <StyledTitle>Bulbasaur</StyledTitle>
               </div>
-              <StyledImage alt='' src={getPokemonImage('1')} />
+              <img alt='' src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png" />
             </Space>
           </StyledCard>
         </Col>
@@ -162,7 +162,7 @@ const App = () => {
                   Poison
                 </StyledButton>
               </div>
-              <StyledImage alt='' src={getPokemonImage('1')} />
+              <img alt='' src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png" />
             </Space>
           </StyledCard>
         </Col>
