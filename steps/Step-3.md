@@ -169,8 +169,8 @@ Finally all we have to do in the `PokeCard`, is to import `PokeType` and pass in
 
 ```javascript
 import React from 'react';
-import { Card, Col, Space } from 'antd';
-import { getBackgroundType, getPokemonImage } from 'helper/pokemonHelpers';
+import { Button, Card, Col, Space } from 'antd';
+import { getBackgroundType } from 'helper/pokemonHelpers';
 import PokeType from 'components/PokeType';
 import styled from 'styled-components';
 
