@@ -34,7 +34,7 @@ const StyledTitle = styled.h2`
 
 const PokeCard = () => {
   return (
-    <Col span={8}>
+    <Col span={6}>
       <StyledCard typeName={getBackgroundType('grass')}>
         <Space align='start'>
           <div>
