@@ -56,7 +56,7 @@ Afterwards lets modify `src/components/PokeCard` to use the new prop whenever a 
 
 ```javascript
 return (
-  <Col span={8}>
+  <Col span={6}>
     <StyledCard
       typeName={getBackgroundType(pokemonDetail?.types[0].type.name)}
       onClick={() => props.changeSelected(pokemonDetail)}
@@ -66,7 +66,7 @@ return (
           <StyledTitle>{uppercaseWord(props.name)}</StyledTitle>
           <PokeType types={pokemonDetail?.types} width='100' />
         </div>
-        <StyledImage alt='' src={getPokemonImage(pokemonDetail?.id)} />
+        <img alt='' src={pokemonDetail?.sprites.front_default} />
       </Space>
     </StyledCard>
   </Col>
