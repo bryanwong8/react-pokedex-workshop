@@ -47,12 +47,12 @@ The app should pop up in your default browser running at http://localhost:3000/.
 Each step in the workshop builds on top of the previous one. If at any point you get stuck, you can find the answers in the source code of the current step. Any step can be used as a starting point to continue on to the remaining steps. Each step will be in a different branch.
 
 - Setup/Intro
-- JSX syntax and Ant design -> [Step 1](https://github.com/wongband/react-pokedex-workshop/blob/master/steps/Step-1(JSX).md) 
-- Styled Components -> [Step 2](https://github.com/wongband/react-pokedex-workshop/blob/master/steps/Step-2(Styled-Components).md)
-- Components -> [Step 3](https://github.com/wongband/react-pokedex-workshop/blob/master/steps/Step-3(Separating-components).md)
-- API -> [Step 4](https://github.com/wongband/react-pokedex-workshop/blob/master/steps/Step-4(API).md)
-- Integrating API data with components -> [Step 5](https://github.com/wongband/react-pokedex-workshop/blob/master/steps/Step-5(API-Integration).md)
-- Conditionally rendering components -> [Step 6](https://github.com/wongband/react-pokedex-workshop/blob/master/steps/Step-6(Conditional-Rendering).md)
+- JSX syntax and Ant design -> [Step 1](https://github.com/wongband/react-pokedex-workshop/blob/master/steps/Step-1.md) 
+- Styled Components -> [Step 2](https://github.com/bryanwong8/react-pokedex-workshop/blob/master/steps/Step-2.md)
+- Components -> [Step 3](https://github.com/wongband/react-pokedex-workshop/blob/master/steps/Step-3.md)
+- API -> [Step 4](https://github.com/wongband/react-pokedex-workshop/blob/master/steps/Step-4.md)
+- Integrating API data with components -> [Step 5](https://github.com/wongband/react-pokedex-workshop/blob/master/steps/Step-5.md)
+- Conditionally rendering components -> [Step 6](https://github.com/wongband/react-pokedex-workshop/blob/master/steps/Step-6.md)
 
 ## ❓ Asking Questions
 - Please interrupt me and ask questions! Others likely will have the same question.
