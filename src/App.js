@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import { loadPokemon } from 'helper/pokemonHelpers';
 import { Row } from 'antd';
 import PokeCard from 'components/PokeCard';
 import styled from 'styled-components';
@@ -10,6 +11,20 @@ const StyledContainer = styled.div`
 `;
 
 const App = () => {
+  const [pokemon, setPokemon] = useState([]);
+
+  useEffect(() => {
+    const fetchPokemon = async () => {
+      try {
+        const pokemonResults = await loadPokemon();
+        setPokemon(pokemonResults.results);
+      } catch (err) {
+        console.error(err);
+      }
+    };
+    fetchPokemon();
+  }, []);
+
   return (
     <StyledContainer className='site-card-wrapper'>
       <Row>
