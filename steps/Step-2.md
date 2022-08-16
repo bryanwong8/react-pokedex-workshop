@@ -20,7 +20,7 @@ const App = () => {
   return (
     <div>
       <StyledCard>
-        <img alt='' src={getPokemonImage('1')} />
+        <img alt='' src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png" />
       </StyledCard>
     </div>
   );
@@ -45,7 +45,7 @@ const App = () => {
   return (
     <StyledContainer>
       <StyledCard>
-        <StyledImage alt='' src={getPokemonImage('1')} />
+        <img alt='' src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png" />
       </StyledCard>
     </StyledContainer>
   );
