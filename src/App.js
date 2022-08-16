@@ -28,10 +28,16 @@ const App = () => {
   return (
     <StyledContainer className='site-card-wrapper'>
       <Row>
-        <PokeCard />
+        {pokemon.map(selectedPokemon => (
+          <PokeCard
+            key={selectedPokemon.name}
+            name={selectedPokemon.name}
+            url={selectedPokemon.url}
+          />
+        ))}
       </Row>
     </StyledContainer>
-  );
+  )
 };
 
 export default App;

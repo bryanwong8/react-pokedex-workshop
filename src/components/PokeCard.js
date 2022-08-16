@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Button, Card, Col, Space } from 'antd';
-import { getBackgroundType } from 'helper/pokemonHelpers';
+import { uppercaseWord } from 'helper/shared';
+import { loadSelectedPokemon, getBackgroundType } from 'helper/pokemonHelpers';
 import PokeType from 'components/PokeType';
 import styled from 'styled-components';
 
@@ -32,21 +33,37 @@ const StyledTitle = styled.h2`
   color: white;
 `;
 
-const PokeCard = () => {
+const PokeCard = props => {
+  const [pokemonDetail, setPokemonDetail] = useState(null);
+
+  useEffect(() => {
+    const selectedPokemon = async () => {
+      try {
+        const apiResponse = await loadSelectedPokemon(props.url);
+        setPokemonDetail(apiResponse);
+      } catch (err) {
+        console.error(err);
+      }
+    };
+
+    selectedPokemon();
+  }, [props.url]);
+
   return (
     <Col span={8}>
-      <StyledCard typeName={getBackgroundType('grass')}>
+      <StyledCard
+        typeName={getBackgroundType(pokemonDetail?.types[0].type.name)}
+        onClick={() => props.changeSelected(pokemonDetail)}
+      >
         <Space align='start'>
           <div>
-            <StyledTitle>Bulbasaur</StyledTitle>
-            <PokeType type='grass' width='100' />
-            <PokeType type='poison' width='100' />
+            <StyledTitle>{uppercaseWord(props.name)}</StyledTitle>
+            <PokeType types={pokemonDetail?.types} width='100' />
           </div>
-          <img alt='' src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png" />
+          <img alt='' src={pokemonDetail?.sprites.front_default} />
         </Space>
       </StyledCard>
     </Col>
   );
 };
-
 export default PokeCard;

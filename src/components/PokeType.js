@@ -14,16 +14,20 @@ const StyledButton = styled(Button)`
 `;
 
 const PokeType = props => {
-    return (
-      <StyledButton
-        typeName={getType(props.type)}
-        width={props.width}
-        shape='round'
-        size='small'
-      >
-        {props.type}
-      </StyledButton>
-    );
-  };
+  return (
+    <div>
+      {props?.types?.map(typing => (
+        <StyledButton
+          typeName={getType(typing.type.name)}
+          width={props.width}
+          shape='round'
+          size='small'
+        >
+          {uppercaseWord(typing.type.name)}
+        </StyledButton>
+      ))}
+    </div>
+  );
+};
 
 export default PokeType;
