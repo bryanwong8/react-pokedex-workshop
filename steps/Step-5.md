@@ -60,8 +60,7 @@ import React, { useEffect, useState } from 'react';
 import { uppercaseWord } from 'helper/shared';
 import {
   loadSelectedPokemon,
-  getBackgroundType,
-  getPokemonImage
+  getBackgroundType
 } from 'helper/pokemonHelpers';
 
 const PokeCard = () => {
@@ -89,7 +88,7 @@ const PokeCard = () => {
             <PokeType type='grass' width={'100'} />
             <PokeType type='poison' width={'100'} />
           </div>
-          <StyledImage alt='' src={getPokemonImage('1')} />
+          <img alt='' src={https://pokeapi.co/api/v2/pokemon/1} />
         </Space>
       </StyledCard>
     </Col>
@@ -109,7 +108,7 @@ return (
           <PokeType type='grass' width={'100'} />
           <PokeType type='poison' width={'100'} />
         </div>
-        <StyledImage alt='' src={getPokemonImage(pokemonDetail?.id)} />
+        <img alt='' src={pokemonDetail?.sprites.front_default} />
       </Space>
     </StyledCard>
   </Col>
@@ -151,7 +150,7 @@ return (
           <StyledTitle>{uppercaseWord(props.name)}</StyledTitle>
           <PokeType types={pokemonDetail?.types} width='100' />
         </div>
-        <StyledImage alt='' src={getPokemonImage(pokemonDetail?.id)} />
+        <img alt='' src={pokemonDetail?.sprites.front_default} />
       </Space>
     </StyledCard>
   </Col>
