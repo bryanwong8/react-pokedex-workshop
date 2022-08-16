@@ -63,7 +63,7 @@ import {
   getBackgroundType
 } from 'helper/pokemonHelpers';
 
-const PokeCard = () => {
+const PokeCard = (props) => {
   const [pokemonDetail, setPokemonDetail] = useState(null);
 
   useEffect(() => {
@@ -108,7 +108,7 @@ return (
           <PokeType type='grass' width={'100'} />
           <PokeType type='poison' width={'100'} />
         </div>
-        <img alt='' src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png" />
+        <img alt='' src={pokemonDetail?.sprites.front_default} />
       </Space>
     </StyledCard>
   </Col>
