@@ -1,5 +1,6 @@
 import React from 'react';
-import { Button, Card } from 'antd';
+import { getBackgroundType, getType } from 'helper/pokemonHelpers';
+import { Button, Card, Col, Row, Space } from 'antd';
 import styled from 'styled-components';
 
 const StyledButton = styled(Button)`
@@ -26,20 +27,51 @@ const StyledCard = styled(Card)`
   }
 `;
 
-const App = () => {
-  const name = 'Bryan Wong';
+const StyledContainer = styled.div`
+  margin: auto;
+  width: 65%;
+  padding: 10px;
+`;
 
+const StyledTitle = styled.h2`
+  color: white;
+`;
+
+const App = () => {
   return (
-    <div>
-      <h1>Hi there, my name is {name}! Welcome to my Pokedex!</h1>
-      <p>Hi Im a paragraph in React</p>
-      <Card>
-        <img
-          alt=''
-          src='https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png'
-        />
-      </Card>
-    </div>
+    <StyledContainer className='site-card-wrapper'>
+      <Row>
+        <Col span={8}>
+          <StyledCard typeName={getBackgroundType('grass')}>
+            <Space align='start'>
+              <div>
+                <StyledTitle>Bulbasaur</StyledTitle>
+                <StyledButton
+                  typeName={getType('grass')}
+                  width={'100'}
+                  shape='round'
+                  size='small'
+                >
+                  Grass
+                </StyledButton>
+                <StyledButton
+                  typeName={getType('poison')}
+                  width={'100'}
+                  shape='round'
+                  size='small'
+                >
+                  Poison
+                </StyledButton>
+              </div>
+              <img
+                alt=''
+                src='https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png'
+              />
+            </Space>
+          </StyledCard>
+        </Col>
+      </Row>
+    </StyledContainer>
   );
 };
 
