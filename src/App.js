@@ -27,7 +27,20 @@ const StyledCard = styled(Card)`
 `;
 
 const App = () => {
-  return null;
+  const name = 'Bryan Wong';
+
+  return (
+    <div>
+      <h1>Hi there, my name is {name}! Welcome to my Pokedex!</h1>
+      <p>Hi Im a paragraph in React</p>
+      <Card>
+        <img
+          alt=''
+          src='https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png'
+        />
+      </Card>
+    </div>
+  );
 };
 
 export default App;
