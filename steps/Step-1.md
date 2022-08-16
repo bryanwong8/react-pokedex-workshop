@@ -94,7 +94,6 @@ Lastly since we are building a Pokedex lets start by putting the image and name 
 ```javascript
 import React from 'react';
 import { Card } from 'antd';
-import { getPokemonImage } from 'helper/pokemonHelpers';
 
 const App = () => {
   const name = 'Bryan Wong';
@@ -104,7 +103,7 @@ const App = () => {
       <h1>Hi there, my name is {name}! Welcome to my Pokedex!</h1>
       <p>Hi Im a paragraph in React</p>
       <Card>
-        <img alt='' src={getPokemonImage('1')} />
+        <img alt='' src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png" />
       </Card>
     </div>
   );
