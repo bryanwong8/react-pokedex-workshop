@@ -13,6 +13,7 @@ const StyledButton = styled(Button)`
 
 const StyledCard = styled(Card)`
   background-color: ${props => props.typeName};
+  margin: 30px;
   border-radius: 27px;
   color: white;
 
