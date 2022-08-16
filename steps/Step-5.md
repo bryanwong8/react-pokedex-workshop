@@ -63,7 +63,7 @@ import {
   getBackgroundType
 } from 'helper/pokemonHelpers';
 
-const PokeCard = () => {
+const PokeCard = (props) => {
   const [pokemonDetail, setPokemonDetail] = useState(null);
 
   useEffect(() => {
@@ -80,7 +80,7 @@ const PokeCard = () => {
   }, [props.url]);
 
   return (
-    <Col span={8}>
+    <Col span={6}>
       <StyledCard typeName={getBackgroundType('grass')}>
         <Space align='start'>
           <div>
@@ -100,7 +100,7 @@ Let's check the network's tab to see what data we get back. That way we can star
 
 ```javascript
 return (
-  <Col span={8}>
+  <Col span={6}>
     <StyledCard typeName={getBackgroundType(pokemonDetail?.types[0].type.name)}>
       <Space align='start'>
         <div>
@@ -108,7 +108,7 @@ return (
           <PokeType type='grass' width={'100'} />
           <PokeType type='poison' width={'100'} />
         </div>
-        <img alt='' src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png" />
+        <img alt='' src={pokemonDetail?.sprites.front_default} />
       </Space>
     </StyledCard>
   </Col>
@@ -140,7 +140,7 @@ Afterwards we can pass in the types data into `PokeType` from `PokeCard` like so
 
 ```javascript
 return (
-  <Col span={8}>
+  <Col span={6}>
     <StyledCard
       typeName={getBackgroundType(pokemonDetail?.types[0].type.name)}
       onClick={() => props.changeSelected(pokemonDetail)}

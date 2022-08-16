@@ -16,6 +16,7 @@ const StyledButton = styled(Button)`
 
 const StyledCard = styled(Card)`
   background-color: ${props => props.typeName};
+  margin: 30px;
   border-radius: 27px;
   color: white;
 
@@ -50,7 +51,7 @@ const PokeCard = props => {
   }, [props.url]);
 
   return (
-    <Col span={8}>
+    <Col span={6}>
       <StyledCard
         typeName={getBackgroundType(pokemonDetail?.types[0].type.name)}
         onClick={() => props.changeSelected(pokemonDetail)}
