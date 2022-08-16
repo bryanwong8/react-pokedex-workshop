@@ -27,10 +27,10 @@ const App = () => {
 
   return (
     <StyledContainer className='site-card-wrapper'>
-      <Row>
-        <PokeCard />
-      </Row>
-    </StyledContainer>
+    <Row>
+      <PokeCard />
+    </Row>
+  </StyledContainer>
   );
 };
 
