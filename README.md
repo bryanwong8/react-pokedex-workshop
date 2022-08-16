@@ -58,13 +58,13 @@ Each step in the workshop builds on top of the previous one. If at any point you
 - Please interrupt me and ask questions! Others likely will have the same question.
 
 ## 🌟 Concepts
-- Using JSX syntax -> [Step 1](https://github.com/wongband/react-pokedex-workshop/blob/master/steps/Step-1(JSX).md)
-- Using third party styling libraries -> [Step 1](https://github.com/wongband/react-pokedex-workshop/blob/master/steps/Step-1(JSX).md)
-- Separating components to make readable, reusable and composable components -> [Step 3](https://github.com/wongband/react-pokedex-workshop/blob/master/steps/Step-3(Separating-components).md)
-- Managing component state with `useState` -> [Step 4](https://github.com/wongband/react-pokedex-workshop/blob/master/steps/Step-4(API).md)
-- Making API calls with `useEffect` -> [Step 4](https://github.com/wongband/react-pokedex-workshop/blob/master/steps/Step-4(API).md)
-- Integrating API data with Components -> [Step 5](https://github.com/wongband/react-pokedex-workshop/blob/master/steps/Step-5(API-Integration).md)
-- Conditionally rendering components -> [Step 6](https://github.com/wongband/react-pokedex-workshop/blob/master/steps/Step-6(Conditional-Rendering).md)
+- Using JSX syntax -> [Step 1](https://github.com/bryanwong8/react-pokedex-workshop/blob/master/steps/Step-1.md)
+- Using third party styling libraries -> [Step 1](https://github.com/wongband/react-pokedex-workshop/blob/master/steps/Step-1.md)
+- Separating components to make readable, reusable and composable components -> [Step 3](https://github.com/wongband/react-pokedex-workshop/blob/master/steps/Step-3.md)
+- Managing component state with `useState` -> [Step 4](https://github.com/wongband/react-pokedex-workshop/blob/master/steps/Step-4.md)
+- Making API calls with `useEffect` -> [Step 4](https://github.com/wongband/react-pokedex-workshop/blob/master/steps/Step-4.md)
+- Integrating API data with Components -> [Step 5](https://github.com/wongband/react-pokedex-workshop/blob/master/steps/Step-5.md)
+- Conditionally rendering components -> [Step 6](https://github.com/wongband/react-pokedex-workshop/blob/master/steps/Step-6.md)
 - Using Styled-Components -> Throughout every step
 
 ## 🤝 Code of Conduct
