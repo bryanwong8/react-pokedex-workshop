@@ -56,7 +56,7 @@ const App = () => {
   return (
     <StyledContainer>
       <Row>
-        <Col span={8}>
+        <Col span={6}>
           <StyledCard>
             <img alt='' src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png" />
           </StyledCard>
@@ -78,7 +78,7 @@ const App = () => {
   return (
     <StyledContainer>
       <Row>
-        <Col span={8}>
+        <Col span={6}>
           <StyledCard>
             <Space align='start'>
               <div>
@@ -103,7 +103,7 @@ const App = () => {
   return (
     <StyledContainer>
       <Row>
-        <Col span={8}>
+        <Col span={6}>
           <StyledCard typeName={getBackgroundType('grass')}>
             <Space align='start'>
               <div>
@@ -135,7 +135,7 @@ const App = () => {
   return (
     <StyledContainer className='site-card-wrapper'>
       <Row>
-        <Col span={8}>
+        <Col span={6}>
           <StyledCard typeName={getBackgroundType('grass')}>
             <Space align='start'>
               <div>
