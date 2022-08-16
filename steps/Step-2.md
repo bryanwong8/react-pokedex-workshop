@@ -36,11 +36,6 @@ const StyledContainer = styled.div`
   padding: 10px;
 `;
 
-const StyledImage = styled.img`
-  width: 80%;
-  height: 100%;
-`;
-
 const App = () => {
   return (
     <StyledContainer>

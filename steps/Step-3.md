@@ -65,7 +65,7 @@ const PokeCard = () => {
               Poison
             </StyledButton>
           </div>
-          <StyledImage alt='' src={getPokemonImage('1')} />
+          <img alt='' src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png" />
         </Space>
       </StyledCard>
     </Col>
@@ -75,7 +75,7 @@ const PokeCard = () => {
 export default PokeCard;
 ```
 
-`NOTE: Move the StyledCard, StyledTitle, StyledButton and StyledImage to PokeCard.js as well.`
+`NOTE: Move the StyledCard, StyledTitle, StyledButton to PokeCard.js as well.`
 
 Back in `src/App.js`, we'll import `PokeCard` at the top of the file:
 
@@ -184,7 +184,7 @@ const PokeCard = () => {
             <PokeType type='grass' width='100' />
             <PokeType type='poison' width='100' />
           </div>
-          <StyledImage alt='' src={getPokemonImage('1')} />
+          <img alt='' src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png" />
         </Space>
       </StyledCard>
     </Col>

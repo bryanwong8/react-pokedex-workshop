@@ -201,11 +201,6 @@ const StyledContent = styled(Content)`
   padding: 28px;
 `;
 
-const StyledImage = styled.img`
-  width: 40%;
-  margin-top: 2em;
-`;
-
 const StyledImageContainer = styled.div`
   text-align: center;
 `;
@@ -255,7 +250,7 @@ return (
         </span>
 
         <StyledImageContainer>
-          <StyledImage alt='' src={getPokemonImage(props.pokemonDetail?.id)} />
+          <img alt='' src={getPokemonImage(props.pokemonDetail?.id)} />
         </StyledImageContainer>
       </StyledContent>
     </StyledLayout>
