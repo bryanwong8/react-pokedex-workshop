@@ -108,7 +108,7 @@ return (
           <PokeType type='grass' width={'100'} />
           <PokeType type='poison' width={'100'} />
         </div>
-        <img alt='' src={pokemonDetail?.sprites.front_default} />
+        <img alt='' src={https://pokeapi.co/api/v2/pokemon/1} />
       </Space>
     </StyledCard>
   </Col>
