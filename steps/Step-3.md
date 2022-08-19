@@ -36,7 +36,6 @@ import React from 'react';
 import { Button, Card, Col, Space } from 'antd';
 import {
   getBackgroundType,
-  getPokemonImage,
   getType
 } from 'helper/pokemonHelpers';
 import styled from 'styled-components';
