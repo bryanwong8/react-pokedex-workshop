@@ -143,7 +143,6 @@ return (
   <Col span={6}>
     <StyledCard
       typeName={getBackgroundType(pokemonDetail?.types[0].type.name)}
-      onClick={() => props.changeSelected(pokemonDetail)}
     >
       <Space align='start'>
         <div>
