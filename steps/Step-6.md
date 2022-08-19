@@ -128,6 +128,7 @@ const PokeCard = props => {
             key={selectedPokemon.name}
             name={selectedPokemon.name}
             url={selectedPokemon.url}
+            changeSelected={setSelectedPokemon}
           />
         ))}
       </Row>
