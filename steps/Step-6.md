@@ -143,7 +143,7 @@ Now lets create a new component called `PokeModal` in `src/components`:
 import * as React from 'react';
 import { Layout, Modal } from 'antd';
 import { calculateStatTotal, uppercaseWord } from 'helper/shared';
-import { getBackgroundType, getPokemonImage } from 'helper/pokemonHelpers';
+import { getBackgroundType } from 'helper/pokemonHelpers';
 import styled from 'styled-components';
 import PokeType from 'components/PokeType';
 
@@ -251,7 +251,7 @@ return (
         </span>
 
         <StyledImageContainer>
-          <img alt='' src={getPokemonImage(props.pokemonDetail?.id)} />
+          <img alt='' src={props.pokemonDetail?.sprites.front_default} />
         </StyledImageContainer>
       </StyledContent>
     </StyledLayout>
