@@ -35,6 +35,7 @@ const StyledTitle = styled.h2`
 `;
 
 const PokeCard = props => {
+  const [selectedPokemon, setSelectedPokemon] = useState(null);
   const [pokemonDetail, setPokemonDetail] = useState(null);
 
   useEffect(() => {
@@ -54,6 +55,7 @@ const PokeCard = props => {
     <Col span={6}>
       <StyledCard
         typeName={getBackgroundType(pokemonDetail?.types[0].type.name)}
+        onClick={() => props.changeSelected(pokemonDetail)}
       >
         <Space align='start'>
           <div>
