@@ -92,9 +92,3 @@ export const loadSelectedPokemon = async url => {
 
   return pokemonData;
 };
-
-export const getPokemonImage = pokemonId => {
-  return (
-    `https://raw.githubusercontent.com/jnovack/pokemon-svg/3c3ea26da58331d7202e7cdb1aab9b8347d8587f/svg/${pokemonId}.svg`
-  );
-};
