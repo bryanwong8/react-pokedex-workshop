@@ -1,18 +1,9 @@
 import React, { useEffect, useState } from 'react';
-import { Button, Card, Col, Space } from 'antd';
+import { Card, Col, Space } from 'antd';
 import { uppercaseWord } from 'helper/shared';
 import { loadSelectedPokemon, getBackgroundType } from 'helper/pokemonHelpers';
 import PokeType from 'components/PokeType';
 import styled from 'styled-components';
-
-const StyledButton = styled(Button)`
-  background-color: ${props => props.typeName};
-  color: white;
-  border: none;
-  width: ${props => props.width}%;
-  margin-right: 5px;
-  margin-top: 5px;
-`;
 
 const StyledCard = styled(Card)`
   background-color: ${props => props.typeName};
@@ -35,7 +26,6 @@ const StyledTitle = styled.h2`
 `;
 
 const PokeCard = props => {
-  const [selectedPokemon, setSelectedPokemon] = useState(null);
   const [pokemonDetail, setPokemonDetail] = useState(null);
 
   useEffect(() => {
@@ -52,7 +42,7 @@ const PokeCard = props => {
   }, [props.url]);
 
   return (
-    <Col span={6}>
+    <Col span={8}>
       <StyledCard
         typeName={getBackgroundType(pokemonDetail?.types[0].type.name)}
         onClick={() => props.changeSelected(pokemonDetail)}
