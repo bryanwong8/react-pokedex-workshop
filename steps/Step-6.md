@@ -56,7 +56,7 @@ Afterwards lets modify `src/components/PokeCard` to use the new prop whenever a 
 
 ```javascript
 return (
-  <Col span={6}>
+  <Col span={8}>
     <StyledCard
       typeName={getBackgroundType(pokemonDetail?.types[0].type.name)}
       onClick={() => props.changeSelected(pokemonDetail)}
