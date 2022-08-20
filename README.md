@@ -46,7 +46,7 @@ The app should pop up in your default browser running at http://localhost:3000/.
 
 Each step in the workshop builds on top of the previous one. If at any point you get stuck, you can find the answers in the source code of the current step. Any step can be used as a starting point to continue on to the remaining steps. Each step will be in a different branch.
 
-- Setup/Intro
+- Setup/Intro -> [Step 0](https://github.com/bryanwong8/react-pokedex-workshop/blob/main/steps/Step-0.md)
 - JSX syntax and Ant design -> [Step 1](https://github.com/wongband/react-pokedex-workshop/blob/master/steps/Step-1.md) 
 - Styled Components -> [Step 2](https://github.com/bryanwong8/react-pokedex-workshop/blob/master/steps/Step-2.md)
 - Components -> [Step 3](https://github.com/wongband/react-pokedex-workshop/blob/master/steps/Step-3.md)
